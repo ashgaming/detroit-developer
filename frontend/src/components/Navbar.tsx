@@ -49,7 +49,7 @@ const Navbar = () => {
             >
               <Code2 className="w-6 h-6 md:w-8 md:h-8 text-primary" />
               <span className="text-lg md:text-xl font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
-                DevPortfolio
+                Detroit Developer
               </span>
             </motion.a>
 
