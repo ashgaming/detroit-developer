@@ -28,14 +28,14 @@ const Contact = () => {
             <h3 className="text-2xl font-bold mb-4">Contact Information</h3>
             <div className="space-y-4">
               <a
-                href="mailto:contact@example.com"
+                href="ashalhat10000@gmail.com"
                 className="flex items-center space-x-3 text-gray-300 hover:text-primary transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span>contact@example.com</span>
+                <span>ashalhat10000@gmail.com</span>
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/ashgaming"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-gray-300 hover:text-primary transition-colors"
@@ -44,7 +44,7 @@ const Contact = () => {
                 <span>GitHub</span>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/ashish-alhat-091516259/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-gray-300 hover:text-primary transition-colors"

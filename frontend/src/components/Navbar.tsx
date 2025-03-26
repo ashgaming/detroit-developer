@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Code2, Menu, X } from 'lucide-react';
 
@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             <motion.a
-              href="#"
+              href="/"
               className="flex items-center space-x-2"
               whileHover={{ scale: 1.05 }}
             >

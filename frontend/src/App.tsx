@@ -1,46 +1,46 @@
-import React from 'react';
+// import React from 'react';
 import Hero from './components/Hero';
 import ProjectCard from './components/ProjectCard';
 import AboutMe from './components/AboutMe';
 import Services from './components/Services';
-import Testimonials from './components/Testimonials';
+// import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer.tsx';
 import Navbar from './components/Navbar';
 
 const projects = [
   {
-    title: "AI-Powered E-Commerce Platform",
-    description: "A full-stack e-commerce solution with AI-driven product recommendations and chatbot support.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "TensorFlow.js"],
-    demoUrl: "#",
-    githubUrl: "#"
+    title: "5-3-2 Web Card Game",
+    description: "A online fun to play web card game played in 3 player.",
+    image: "https://res.cloudinary.com/dsnrp2dlj/image/upload/v1743004077/mlgkpvhbndy5rhazkiqb.jpg",
+    technologies: ["React", "Node.js", "MongoDB", "Express",],
+    demoUrl: "https://five-three-two.onrender.com",
+    githubUrl: "https://github.com/ashgaming/5-3-2"
   },
   {
-    title: "Real-time Collaboration Tool",
-    description: "A MERN stack application enabling real-time document editing and team collaboration.",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["Socket.io", "React", "MongoDB", "Express", "Node.js"],
+    title: "Local Cleaners Services", 
+    description: "A Mern Stack website for cleaning services.",
+    image: "https://res.cloudinary.com/dsnrp2dlj/image/upload/v1743004516/hkppl37zmlvl2bxtu9zv.webp",
+    technologies: [, "React", "MongoDB", "Express", "Node.js"],
     demoUrl: "#",
-    githubUrl: "#"
+    githubUrl: "https://github.com/ashgaming/LocalCleaners"
   },
-  {
-    title: "AI Content Generator",
-    description: "An AI-powered platform that generates SEO-optimized content using machine learning.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["OpenAI API", "React", "Node.js", "MongoDB"],
-    demoUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    title: "Smart Task Management System",
-    description: "An AI-enhanced project management tool with automated task prioritization.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["MERN Stack", "Machine Learning", "WebSocket"],
-    demoUrl: "#",
-    githubUrl: "#"
-  }
+  // {
+  //   title: "AI Content Generator",
+  //   description: "An AI-powered platform that generates SEO-optimized content using machine learning.",
+  //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000",
+  //   technologies: ["OpenAI API", "React", "Node.js", "MongoDB"],
+  //   demoUrl: "#",
+  //   githubUrl: "#"
+  // },
+  // {
+  //   title: "Smart Task Management System",
+  //   description: "An AI-enhanced project management tool with automated task prioritization.",
+  //   image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000",
+  //   technologies: ["MERN Stack", "Machine Learning", "WebSocket"],
+  //   demoUrl: "#",
+  //   githubUrl: "#"
+  // }
 ];
 
 function App() {
@@ -65,7 +65,7 @@ function App() {
         </section>
 
         <Services />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
         <Footer />
       </main>
