@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Github, Linkedin, Send } from 'lucide-react';
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
     // Handle form submission
-  };
+  },[])
 
   return (
     <section className="py-20 px-4" id="contact">

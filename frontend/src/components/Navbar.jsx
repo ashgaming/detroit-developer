@@ -1,6 +1,7 @@
-import  { useState } from 'react';
+import React, { useState } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Code2, Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [hidden, setHidden] = useState(false);
@@ -15,12 +16,10 @@ const Navbar = () => {
   });
 
   const navItems = [
-    { label: 'Home', href: '#' },
-    { label: 'About', href: '#about' },
-    { label: 'Portfolio', href: '#portfolio' },
-    { label: 'Services', href: '#services' },
-    { label: 'Testimonials', href: '#testimonials' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
+    { label: 'Contact', href: '/contact' },
+    { label: 'Ideas', href: '/ideas' },
   ];
 
   const handleNavClick = () => {
@@ -42,28 +41,26 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
-            <motion.a
-              href="/"
+            <Link
+              to="/"
               className="flex items-center space-x-2"
-              whileHover={{ scale: 1.05 }}
             >
               <Code2 className="w-6 h-6 md:w-8 md:h-8 text-primary" />
               <span className="text-lg md:text-xl font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
                 Detroit Developer
               </span>
-            </motion.a>
+            </Link>
 
             <div className="hidden md:flex items-center space-x-8">
               {navItems.map((item) => (
-                <motion.a
+                <Link
                   key={item.label}
-                  href={item.href}
+                  to={item.href}
                   className="text-gray-300 hover:text-primary transition-colors"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
+                  onClick={handleNavClick}
                 >
                   {item.label}
-                </motion.a>
+                </Link>
               ))}
             </div>
 
@@ -91,16 +88,22 @@ const Navbar = () => {
       >
         <div className="flex flex-col pt-20 px-4">
           {navItems.map((item) => (
-            <motion.a
+            <Link
               key={item.label}
-              href={item.href}
+              to={item.href}
               className="text-gray-300 hover:text-primary py-3 transition-colors border-b border-gray-700 last:border-none"
-              whileTap={{ scale: 0.95 }}
               onClick={handleNavClick}
             >
               {item.label}
-            </motion.a>
+            </Link>
           ))}
+          <Link
+            to="/project-specification"
+            className="bg-gradient-to-r from-primary to-secondary text-dark font-bold py-3 px-4 rounded-lg mt-4 text-center hover:shadow-[0_0_20px_rgba(0,255,255,0.3)] transition-shadow"
+            onClick={handleNavClick}
+          >
+            Start Project
+          </Link>
         </div>
       </motion.div>
 

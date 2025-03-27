@@ -3,9 +3,10 @@ import { motion } from 'framer-motion';
 import { Code2, Brain, Database } from 'lucide-react';
 import Particles from 'react-particles';
 import { loadSlim } from "tsparticles-slim";
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
-  const particlesInit = async (engine: any) => {
+  const particlesInit = async (engine) => {
     await loadSlim(engine);
   };
 
@@ -61,7 +62,7 @@ const Hero = () => {
           className="text-center"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
-            Building the Future with AI & MERN Stack
+            Detroit Web Development
           </h1>
           <p className="text-gray-400 text-xl md:text-2xl mb-8">
             Transforming ideas into powerful web applications
@@ -90,14 +91,19 @@ const Hero = () => {
               <span className="text-gray-300">Cloud Solutions</span>
             </motion.div>
           </div>
+
+           <Link
+                          to="/project-specification"
+                        >
           
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-gradient-to-r from-primary to-secondary text-dark font-bold py-4 px-8 rounded-full text-lg shadow-[0_0_20px_rgba(0,255,255,0.3)] hover:shadow-[0_0_30px_rgba(0,255,255,0.5)] transition-shadow"
-          >
-            Hire Me
+            >
+            Request Project
           </motion.button>
+            </Link>
         </motion.div>
       </div>
     </div>

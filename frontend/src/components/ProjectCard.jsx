@@ -2,16 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  image: string;
-  technologies: string[];
-  demoUrl: string;
-  githubUrl: string;
-}
-
-const ProjectCard: React.FC<ProjectCardProps> = ({
+const ProjectCard = ({
   title,
   description,
   image,
